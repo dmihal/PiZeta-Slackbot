@@ -9,7 +9,7 @@ module.exports = (robot) ->
 
   robot.respond /is keystone on sale/gi, (msg) ->
     austin msg
-  robot.respond /cheapest beer/gi, (msg) ->
+  robot.respond /[\w\d ]*cheapest beer/gi, (msg) ->
     cheapest msg
     
 cheapest = (msg) ->
